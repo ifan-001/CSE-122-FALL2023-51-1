@@ -1,1 +1,21 @@
 
+#include <iostream>
+using namespace std;
+template <typename R>
+R greatest (R e, R f, R g)
+{
+    return max(max(e, f), g);
+}
+int main()
+{
+    int e, f, g;
+    cin >> e >> f >> g;
+    cout << greatest (e, f, g) << endl;
+    char s, t, u;
+    cin >> s >> t >> u;
+    cout << greatest (s, t, u) << endl;
+    float l, m, o;
+    cin >> l >> m >> o;
+    cout << greatest (l, m, o) << endl;
+    return 0;
+}
